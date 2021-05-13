@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicatie de vreme</title>
+</head>
+<body>
+    <div class="app-main">
+
+     <h1>Aplicatie vreme</h1>
+ 
+         <div class="searchInputBox">
+             <input type="text" class="input-box" id="city" placeholder="Enter city name..." autocomplete="off">
+        </div>
+
+        <div class="weather-body">
+            <div class="location-details">
+                <div class="location-city"> 
+                    <h1 id="cityCurrent"></h1>
+                    <h1>,</h1>
+                    <h1 id="cityCurrentCountry"></h1>
+                </div>
+                
+                <div id="date" class="date"></div>
+            </div>
+            <div class="wheater-status">
+                <p><strong class="temp" id="currentTempSpan">&#8451;</strong></p>
+                <div class="min-max">
+                    <p><span id="tempMax"></span> &#8451;(max) / </p>
+                    <p><span id="tempMin"></span>  &#8451;(min) </p>
+                </div>
+                <p><span class="WeatherType" id="WeatherType"></span></p>
+                <img id="icon"  src="" alt="">
+                <div class="wind-humidity"> 
+                    <p><span id="wind"></span>km/h </p>
+                    <p><span id="humidity"></span>% </p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
